@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+  <!-- mybatis에 대한 이용이라는 선언 -->
+<mapper namespace="com.company.mapper.TestMapper"> <!-- 패키지명.인터페이스명 / 연결해주는 유일한 근거 -->
+
+
+	<select id="getList" resultType="com.company.domain.TestVO"> <!-- boardVO타입으로 배열형식으로 데이터를 쌓는다. 컬렉션 구조 에서 list 배열형식으로 -->
+	<![CDATA[
+		select * from limi
+	]]>
+	</select> <!-- xml에서 사용하는 select 구문의 id 속성값이 boardmapper 인터페이스 메소드의 이름이다 -->
+	
+	
+</mapper> 
+
+
+
